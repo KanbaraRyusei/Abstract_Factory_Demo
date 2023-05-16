@@ -12,4 +12,3 @@ public abstract class BulletSpawner
 {
     public abstract BaseSpawnBullet Spawner<T>(T param) where T : BaseSpawnParameter;
 }
-
