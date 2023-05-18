@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-
         if (_bullets.Count < MAX_BULLET_COUNT)
         {
             _spawnParam.Name = "Bullet_" + _bullets.Count;
@@ -28,8 +27,7 @@ public class GameManager : MonoBehaviour
 
     private BulletSpawner GetSpawner(int count)
     {
-        if (_bullets.Count == 0) return _nomalBulletSpawner;
-        else return _nomalBulletSpawner;
+        return _nomalBulletSpawner;
     }
 }
 
