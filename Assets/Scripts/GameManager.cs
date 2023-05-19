@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private const int MAX_BULLET_COUNT = 10;
-    private NomalBulletSpawner _nomalBulletSpawner = new NomalBulletSpawner();
-    private BaseSpawnParameter _spawnParam = new NomalBulletParameter();
-    private List<BaseSpawnBullet> _bullets = new List<BaseSpawnBullet>(MAX_BULLET_COUNT);
-
-    private void Awake()
-    {
-        _spawnParam.Power = 2;
-        _spawnParam.Speed = 1;
-    }
+    private NormalBulletSpawner _nomalBulletSpawner = new NormalBulletSpawner();
+    private BaseSpawnParameter _spawnParam = new NormalBulletParameter();
+    private List<BaseSpawnBullet> _bullets = new List<BaseSpawnBullet>();
 
     private void Update()
     {
-        if (_bullets.Count < MAX_BULLET_COUNT)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            _spawnParam.Name = "Bullet_" + _bullets.Count;
-            var e = GetSpawner(_bullets.Count).Spawner(_spawnParam);
+            var e = GetSpawner(BulletType.Nomal).Spawn(_spawnParam);
+            Instantiate(e);
             _bullets.Add(e);
         }
     }
 
-    private BulletSpawner GetSpawner(int count)
+    private BulletSpawner GetSpawner(BulletType type)
     {
-        return _nomalBulletSpawner;
+        switch (type)
+        {
+            case BulletType.Nomal:
+                return _nomalBulletSpawner;
+            default:
+                return _nomalBulletSpawner;
+        }
     }
 }
 
+enum BulletType
+{
+    Nomal,
+    Super,
+    Hyper
+}
