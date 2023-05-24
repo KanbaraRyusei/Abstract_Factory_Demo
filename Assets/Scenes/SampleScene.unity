@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnParams:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 223c2d501bd89684f95107a53bbec38e, type: 2}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!4 &1723474819
