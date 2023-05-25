@@ -6,7 +6,3 @@ public class NormalBullet : BaseSpawnBullet
 
 }
 
-public class NormalBulletParameter : BaseSpawnParameter
-{
-
-}
