@@ -6,5 +6,7 @@ public static class BulletPathManager
 {
     public static readonly string BASE_BULLET_PATH = "Bullets/BaseBulletData";
 
-    public static readonly string NOMAL_BULLET_PATH = "Bullets/NomalBulletData";
+    public static readonly string NORMAL_BULLET_PATH = "Bullets/NormalBulletData";
+
+    public static readonly string SUPER_BULLET_PATH = "Bullets/SuperBulletData";
 }
