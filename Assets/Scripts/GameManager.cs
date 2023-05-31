@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     private List<BaseSpawnBullet> _bullets = new List<BaseSpawnBullet>();
 
-    private BulletType _type = BulletType.Nomal;
+    private BulletType _type = BulletType.Normal;
 
     private void Update()
     {
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     {
         switch (type)
         {
-            case BulletType.Nomal:
+            case BulletType.Normal:
                 return _nomalBulletSpawner;
             case BulletType.Super:
                 return _nomalBulletSpawner;
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            _type = BulletType.Nomal;
+            _type = BulletType.Normal;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
 enum BulletType
 {
-    Nomal,
+    Normal,
     Super,
     Hyper
 }
