@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     private BaseSpawnParameter[] _spawnParams;
     
     private NormalBulletSpawner _nomalBulletSpawner = new NormalBulletSpawner();
+    private SuperBulletSpawner _superBulletSpawner = new SuperBulletSpawner();
+    private HyperBulletSpawner _hyperBulletSpawner = new HyperBulletSpawner();
 
     private List<BaseSpawnBullet> _bullets = new List<BaseSpawnBullet>();
 
@@ -25,9 +27,9 @@ public class GameManager : MonoBehaviour
             case BulletType.Normal:
                 return _nomalBulletSpawner;
             case BulletType.Super:
-                return _nomalBulletSpawner;
+                return _superBulletSpawner;
             case BulletType.Hyper:
-                return _nomalBulletSpawner;
+                return _hyperBulletSpawner;
             default:
                 return _nomalBulletSpawner;
         }

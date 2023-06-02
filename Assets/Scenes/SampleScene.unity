@@ -238,8 +238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnParams:
   - {fileID: 11400000, guid: 223c2d501bd89684f95107a53bbec38e, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: cca6b4b8c2fd0ad4482b74360d1b1953, type: 2}
+  - {fileID: 11400000, guid: 9087ae9c6f54aed45b48b81ebac5cabc, type: 2}
 --- !u!4 &1723474819
 Transform:
   m_ObjectHideFlags: 0

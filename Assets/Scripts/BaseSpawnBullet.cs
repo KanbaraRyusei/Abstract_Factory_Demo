@@ -36,8 +36,9 @@ public class BaseSpawnBullet : MonoBehaviour
         _rb ??= GetComponent<Rigidbody2D>();
     }
 
-    protected void Shoot()
+    protected virtual void Shoot()
     {
         _rb.velocity = new Vector2(0f, Speed);
+        Debug.Log("Shoot" + Speed);
     }
 }
