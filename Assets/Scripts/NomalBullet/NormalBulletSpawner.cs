@@ -8,9 +8,7 @@ public class NormalBulletSpawner : BulletSpawner
     {
         _cache ??= Resources.Load<NormalBullet>(BulletPathManager.NORMAL_BULLET_PATH);
 
-        _cache.SetName(param.Name);
-        _cache.SetPower(param.Power);
-        _cache.SetSpeed(param.Speed);
+        _cache.SetData(param.Name, param.Power, param.Speed);
         return _cache;
     }
 }

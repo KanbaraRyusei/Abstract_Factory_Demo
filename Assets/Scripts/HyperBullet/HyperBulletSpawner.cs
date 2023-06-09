@@ -8,9 +8,7 @@ public class HyperBulletSpawner : BulletSpawner
     {
         _cache ??= Resources.Load<HyperBullet>(BulletPathManager.HYPER_BULLET_PATH);
 
-        _cache.SetName(param.Name);
-        _cache.SetPower(param.Power);
-        _cache.SetSpeed(param.Speed);
+        _cache.SetData(param.Name, param.Power, param.Speed);
         return _cache;
     }
 }

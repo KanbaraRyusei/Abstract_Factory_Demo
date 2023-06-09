@@ -10,30 +10,17 @@ public class BaseSpawnBullet : MonoBehaviour
 
     protected Rigidbody2D _rb;
 
-    private void OnEnable()
-    {
-        Init();
-        Shoot();
-    }
-
-    public void SetName(string name)
+    public void SetData(string name, int power, int speed)
     {
         Name = name;
-    }
-
-    public void SetPower(int power)
-    {
         Power = power;
-    }
-
-    public void SetSpeed(int speed)
-    {
         Speed = speed;
     }
 
-    protected void Init()
+    public void Init()
     {
         _rb ??= GetComponent<Rigidbody2D>();
+        Shoot();
     }
 
     protected virtual void Shoot()
