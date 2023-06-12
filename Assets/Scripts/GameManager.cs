@@ -40,8 +40,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var e = GetSpawner(_type).Spawn(_spawnParams[(int)_type]);
-            var g = Instantiate(e);
-            var c = g.GetComponent<BaseSpawnBullet>();
+            var c = Instantiate(e).GetComponent<BaseSpawnBullet>();
             c.SetData(e.Name, e.Power, e.Speed);
             c.Init();
             _bullets.Add(e);
