@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-
 public abstract class BulletSpawner
 {
     protected BaseSpawnBullet _cache = null;
