@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// 生成するBulletにつけるクラス
+/// 基底クラスであり、派生させて使用する
+/// </summary>
 public class BaseSpawnBullet : MonoBehaviour
 {
     public string Name { get; protected set; }
@@ -8,14 +12,14 @@ public class BaseSpawnBullet : MonoBehaviour
 
     protected Rigidbody2D _rb;
 
-    public void SetData(string name, int power, int speed)
+    public virtual void SetData(string name, int power, int speed)
     {
         Name = name;
         Power = power;
         Speed = speed;
     }
 
-    public void Init()
+    public virtual void Init()
     {
         _rb ??= GetComponent<Rigidbody2D>();
         Shoot();
