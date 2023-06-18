@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 入力を受け付けてクラスの関数を呼び出すクラス
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     [SerializeField]

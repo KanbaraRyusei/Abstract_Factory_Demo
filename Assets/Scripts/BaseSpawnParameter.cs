@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Parameter‚ğİ’è‚·‚éScriptableObject‚ÌƒNƒ‰ƒX
+/// </summary>
 [CreateAssetMenu(menuName ="Parameter/Base")]
 public class BaseSpawnParameter : ScriptableObject
 {
