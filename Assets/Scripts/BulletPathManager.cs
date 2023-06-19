@@ -1,3 +1,6 @@
+/// <summary>
+/// Bullet‚ÌPath‚ğ‚Á‚Ä‚¨‚­ƒNƒ‰ƒX
+/// </summary>
 public static class BulletPathManager
 {
     public static readonly string BASE_BULLET_PATH = "Bullets/BaseBulletData";
