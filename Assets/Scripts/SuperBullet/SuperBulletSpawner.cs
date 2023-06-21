@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// SuperBullet‚ÌSpawner
+/// </summary>
 public class SuperBulletSpawner : BulletSpawner
 {
     public override BaseSpawnBullet Spawn<T>(T param)
