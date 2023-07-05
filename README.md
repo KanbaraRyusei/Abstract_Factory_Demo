@@ -13,5 +13,5 @@
 * Scene上に[GameManager](https://github.com/KanbaraRyusei/Abstract_Factory_Demo/blob/main/Assets/Scripts/GameManager.cs)をつけたGameObjectがあれば動くようになっている。
 
 ## 作ってみた感想
-* 弾を発射するだけだと、2度手間になったり、他のアプローチの方がいろいろと早かったりするが、いい勉強になったと思う。
+* 弾を発射するだけだと、2度手間になったり、他のアプローチの方が早かったりするが、いい勉強になったと思う。
 * 完全に理解したとは思ってないので間違いの指摘や改善案があれば Issue や Pullrequest をどんどん投げてもらいたい。
